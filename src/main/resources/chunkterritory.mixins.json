@@ -3,9 +3,8 @@
   "minVersion": "0.8",
   "package": "com.chunkterritory.mixin",
   "compatibilityLevel": "JAVA_21",
-  "client": [
-    "XaeroWorldMapMixin"
-  ],
+  "mixins": [],
+  "client": [],
   "injectors": {
     "defaultRequire": 1
   }
