@@ -7,7 +7,7 @@
   "authors": ["You"],
   "license": "MIT",
   "icon": "assets/chunkterritory/icon.png",
-  "environment": "client",
+  "environment": "*",
   "entrypoints": {
     "client": [
       "com.chunkterritory.ChunkTerritoryClient"
