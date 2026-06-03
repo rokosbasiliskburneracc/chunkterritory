@@ -223,7 +223,7 @@ public class TerritoryScreen extends Screen {
         Territory t = territoryList.get(selectedIndex);
         ChunkPos pos = client.player.getChunkPos();
         boolean claimed = TerritoryManager.INSTANCE.claimChunk(t, pos.x, pos.z);
-        setStatus(claimed ? "Claimed chunk " + pos.x + "," + pos.z + " for "" + t.name + """
+        setStatus(claimed ? "Claimed chunk " + pos.x + "," + pos.z + " for '" + t.name + "'"
             : "Already owned by this territory");
         refreshList();
         TerritoryOverlayRenderer.markDirty();
@@ -256,7 +256,7 @@ public class TerritoryScreen extends Screen {
         refreshList();
         selectedIndex = Math.max(0, selectedIndex - 1);
         updateButtonStates();
-        setStatus("Deleted "" + t.name + """);
+        setStatus("Deleted '" + t.name + "'");
         TerritoryOverlayRenderer.markDirty();
     }
 
