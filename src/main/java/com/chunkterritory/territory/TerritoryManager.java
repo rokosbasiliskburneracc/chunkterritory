@@ -246,7 +246,7 @@ public class TerritoryManager {
     public static String deriveWorldId(MinecraftClient client) {
         if (client.getServer() != null) {
             // Singleplayer
-            return "sp_" + client.getServer().getSavePath(net.minecraft.world.level.storage.LevelStorage.SESSION_ID_PATH).toString();
+            return "sp_" + client.getServer().getSaveProperties().getLevelName();
         } else if (client.getCurrentServerEntry() != null) {
             return "mp_" + client.getCurrentServerEntry().address;
         }
