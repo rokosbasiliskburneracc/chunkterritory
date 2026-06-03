@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "chunkterritory",
+  "version": "${version}",
+  "name": "Chunk Territory",
+  "description": "Client-side chunk claiming with Xaero's World Map integration. Mark, name, and color territories. Share with friends via export codes.",
+  "authors": ["You"],
+  "license": "MIT",
+  "icon": "assets/chunkterritory/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.chunkterritory.ChunkTerritoryClient"
+    ]
+  },
+  "mixins": [
+    "chunkterritory.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1"
+  },
+  "suggests": {
+    "xaeroworldmap": "*",
+    "modmenu": "*"
+  }
+}
