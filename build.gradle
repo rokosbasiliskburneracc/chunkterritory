@@ -13,11 +13,6 @@ base {
 repositories {
 	maven { url 'https://maven.fabricmc.net/' }
 	maven { url 'https://maven.terraformersmc.com/' }
-	// Xaero's repos
-	maven {
-		url 'https://maven.xaero.eu/maven'
-		content { includeGroup 'xaero' }
-	}
 }
 
 loom {
@@ -36,10 +31,7 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	// Xaero's World Map - compile-time only (optional runtime dep)
-	modCompileOnly "xaero:XaerosWorldMap:1.39.0.2:fabric"
-
-	// ModMenu for config button (optional)
+	// ModMenu (optional)
 	modCompileOnly "com.terraformersmc:modmenu:11.0.0"
 }
 
